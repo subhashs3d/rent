@@ -1,0 +1,434 @@
+body {
+  font-family: 'Barlow Semi Condensed'; }
+
+.description, .slider, .footer {
+  font-weight: 500;
+  color: #8a8888; }
+
+.container-fluid {
+  background-color: #212121;
+  margin: 0px;
+  padding: 0px; }
+
+.row {
+  margin: 0px;
+  padding: 0px; }
+
+.main_backgroud_image {
+  background-image: url(../img/main_bg.jpeg);
+  height: 500px;
+  background-attachment: fixed;
+  background-size: cover; }
+
+.main_backgroud_color {
+  height: 500px;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  padding: 3% 7%;
+  z-index: 10; }
+
+.main_title {
+  font-weight: 700;
+  letter-spacing: 0.8rem;
+  color: white;
+  margin-top: -1rem;
+  font-family: "Arial"; }
+
+.nz_tourism, .text-secondary, .footer_links {
+  color: #8a8888; }
+
+.form-control, .typeahead {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #e6a405; }
+
+.time, .peoples, .typeahead {
+  position: relative;
+  top: 8px; }
+
+.typeahead {
+  width: 150%;
+  color: white;
+  top: 3px; }
+
+.peoples {
+  top: 10px; }
+
+.location {
+  display: block;
+  margin-bottom: 8px;
+  width: 100%;
+  font-family: 'Barlow Semi Condensed';
+  font-size: 22px;
+  text-align: left;
+  color: white;
+  background-color: transparent; }
+
+select option,
+.form-control:focus,
+.form-control:hover,
+.form-control:active {
+  background-color: transparent;
+  color: #212121; }
+
+.bookNow {
+  margin-left: 85%;
+  border-radius: 18px; }
+
+.slider {
+  border-width: 50px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-color: #212121; }
+
+.carousel-inner {
+  height: 300px; }
+
+.row.car_move {
+  position: absolute;
+  top: 0px;
+  width: 100%; }
+
+.row.car_description {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background-color: black; }
+
+.first, .second, .third {
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.first.slide_one {
+  background-image: url(../img/bike_1_bg.jpg); }
+
+.first.slide_one.car {
+  background-image: url(../img/bike_1.png); }
+
+.first.slide_two {
+  background-image: url(../img/rover_bg.jpg); }
+
+.first.slide_two.car {
+  background-image: url(../img/rover.png); }
+
+.first.slide_three {
+  background-image: url(../img/porsche_bg.jpg);
+  background-position-x: left; }
+
+.first.slide_three.car {
+  background-image: url(../img/porsche.png); }
+
+.second.slide_one {
+  background-image: url(../img/ford_bg.jpg); }
+
+.second.slide_one.car {
+  background-image: url(../img/ford.png); }
+
+.second.slide_two {
+  background-image: url(../img/bike_2_bg.jpg); }
+
+.second.slide_two.car {
+  background-image: url(../img/bike_2.png); }
+
+.second.slide_three {
+  background-image: url(../img/mini_bg.jpg);
+  background-position-x: left; }
+
+.second.slide_three.car {
+  background-image: url(../img/mini.png); }
+
+.third.slide_one {
+  background-image: url(../img/benz_bg.jpg); }
+
+.third.slide_one.car {
+  background-image: url(../img/benz.png); }
+
+.third.slide_two {
+  background-image: url(../img/bike_3_bg.jpg); }
+
+.third.slide_two.car {
+  background-image: url(../img/bike_3.png); }
+
+.third.slide_three {
+  background-image: url(../img/civic_bg.jpg);
+  background-position-x: left; }
+
+.third.slide_three.car {
+  background-image: url(../img/civic.png); }
+
+.slide_one.car:hover {
+  animation-name: car_move_animation;
+  animation-duration: 2s; }
+
+.slide_two.car:hover {
+  animation-name: car_move_animation;
+  animation-duration: 2s; }
+
+.slide_three.car:hover {
+  animation-name: car_move_animation;
+  animation-duration: 2s; }
+
+@keyframes car_move_animation {
+  0% {
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1); }
+  100% {
+    -ms-transform: scale(1.02, 1.02);
+    -webkit-transform: scale(1.02, 1.02);
+    transform: scale(1.07, 1.07); } }
+ul {
+  padding: 0px;
+  margin: 0px; }
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden; }
+
+.left_arrow {
+  top: -13%;
+  left: -5%;
+  height: 50px; }
+
+.ltwo {
+  left: -2.5%; }
+
+.lthree {
+  left: -0%; }
+
+.lefticon {
+  width: 55px;
+  height: 30px;
+  -webkit-clip-path: polygon(40% 0, 14% 50%, 41% 100%, 25% 100%, 0% 50%, 25% 0%);
+  clip-path: polygon(40% 0, 14% 50%, 41% 100%, 25% 100%, 0% 50%, 25% 0%);
+  animation: sliderarrowanimation infinite;
+  animation-duration: 2s;
+  position: absolute;
+  background-color: grey;
+  left: 46%;
+  opacity: 1; }
+
+.right_arrow {
+  top: -13%;
+  left: 84%;
+  height: 50px; }
+
+.rtwo {
+  left: 81.5%; }
+
+.rthree {
+  left: 79%; }
+
+.righticon {
+  width: 55px;
+  height: 30px;
+  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 61% 100%, 87% 50%, 61% 0%);
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 61% 100%, 87% 50%, 61% 0%);
+  animation: sliderarrowanimation infinite;
+  animation-duration: 2s;
+  position: absolute;
+  background-color: grey;
+  left: 46%;
+  opacity: 1; }
+
+@keyframes sliderarrowanimation {
+  0% {
+    background-color: grey; }
+  20% {
+    background-color: grey; }
+  40% {
+    background-color: orange; }
+  70% {
+    background-color: orange; }
+  90% {
+    background-color: grey; }
+  100% {
+    background-color: grey; } }
+/*-----------------TypeAhead--------------------------------------*/
+.tt-hint {
+  color: #8a8888;
+  padding-top: 3px; }
+
+.tt-menu {
+  width: 150%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.tt-suggestion {
+  padding: 3px 20px;
+  font-size: 18px;
+  line-height: 24px;
+  cursor: pointer; }
+
+.tt-suggestion:hover {
+  color: #212121;
+  background-color: #e6a405;
+  z-index: 10; }
+
+/*-------------------------------------------------------------------*/
+#flight-datepicker .form-item {
+  position: relative;
+  margin: 0px 0px; }
+#flight-datepicker input {
+  display: block;
+  margin-bottom: 8px;
+  width: 100%;
+  font-family: 'Barlow Semi Condensed';
+  font-size: 22px;
+  text-align: left;
+  color: white;
+  background-color: transparent;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #e6a405;
+  border-radius: 0; }
+
+.datepicker.dropdown-menu {
+  padding: 0;
+  background-clip: border-box;
+  border: none;
+  border-radius: 0; }
+  .datepicker.dropdown-menu table {
+    background-color: #b48004;
+    width: 130%; }
+    .datepicker.dropdown-menu table thead {
+      background-color: #b48004; }
+      .datepicker.dropdown-menu table thead tr {
+        border-top: 0; }
+    .datepicker.dropdown-menu table tbody {
+      background-color: white;
+      box-shadow: 0px 2px 8px #212121; }
+    .datepicker.dropdown-menu table tr td, .datepicker.dropdown-menu table tr th {
+      width: auto;
+      height: 24px;
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 0; }
+    .datepicker.dropdown-menu table tr th.datepicker-switch {
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 2;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: white;
+      background-color: inherit;
+      border-radius: 0; }
+    .datepicker.dropdown-menu table tr th.prev,
+    .datepicker.dropdown-menu table tr th.next {
+      color: white;
+      background-color: #9b6f03;
+      border-radius: 0; }
+
+.choose {
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 25%;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out; }
+
+.choose:hover {
+  background-position: 15%; }
+
+.modal-body {
+  padding: 0px;
+  margin: 0px; }
+
+.bike {
+  background-image: url(../img/bike.png); }
+
+.sedan {
+  background-image: url(../img/sedan.png); }
+
+.suv {
+  background-image: url(../img/suv.png); }
+
+.motorhome {
+  background-image: url(../img/motorhome.png); }
+
+.chooseModalHeader {
+  background-color: #e6a405;
+  border-width: 0px; }
+
+.kilometer_input {
+  border-width: 1.5px;
+  border-style: solid;
+  height: 40px;
+  margin-top: 14px;
+  border-color: #8a8888; }
+
+.chooseModalFooter {
+  border-style: none;
+  margin-right: 37%; }
+
+.chooseModalBtn {
+  padding: 2px 32px;
+  border-radius: 9px; }
+
+.selected {
+  height: 275px;
+  background-size: 100%;
+  padding-top: 19px;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out; }
+
+.selected:hover {
+  background-size: 110%;
+  padding-left: 30px; }
+
+.rover {
+  background-image: url(../img/landrover.jpeg); }
+
+.mercedees {
+  background-image: url(../img/amg.jpeg); }
+
+.yamaha {
+  background-image: url(../img/yamaha.jpg); }
+
+.caravan {
+  background-image: url(../img/carvan.jpg); }
+
+.selected_description_container {
+  background-color: white;
+  margin-left: 47%;
+  opacity: 0.7;
+  padding: 5px 10px; }
+
+.header_lines {
+  position: absolute;
+  right: 0px;
+  top: 50px;
+  height: 2px;
+  background-color: white;
+  width: 50%;
+  animation: linesanimation 1.5s ease-out; }
+
+.second_line {
+  right: -90px;
+  top: 80px;
+  animation: linesanimation 1s ease-out; }
+
+@keyframes linesanimation {
+  0% {
+    -ms-transform: translate(50px, 100px);
+    -webkit-transform: translate(50px, 100px);
+    transform: translate(250px, 0px); }
+  100% {
+    -ms-transform: translate(0px, 100px);
+    -webkit-transform: translate(0px, 100px);
+    transform: translate(0px, 0px); } }
+.modal-content {
+  overflow-x: hidden; }
+
+#confirmbookModal {
+  overflow-y: scroll; }
+
+/*# sourceMappingURL=style.css.map */

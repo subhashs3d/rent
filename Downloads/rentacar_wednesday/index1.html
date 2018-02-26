@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>CarRental/NZtourism</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker3.standalone.css'>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+  	  <div class="container-fluid main_backgroud_image">  <!-- DIV-contains-fixed-Background-image-->
+  	  </div>
+      <div class="container-fluid main_backgroud_color"> <!-- DIV-contains-full width container for the background color and opacity adjusted-->
+        	<p class="h1 pt-2 nz_tourism">NEW ZEALAND TOURISM <!--Main-Sub-Title-->
+        	</p>
+       		<h1 class="display-2 sm main_title">PREMIUM<br> WHEELS <!--Main-Title-->
+       		</h1>
+        	<div class="row mainForm pt-4" id="mainBookForm"> <!--BOOK__NOW__FORM-->
+	         	<div class="col-3"> <!--Location__container-->
+	         		<div class="row ">
+	         			<div class="col-12 pt-2">
+		            		<label class="text-capitalize text-white pl-1">Location
+		            		</label>
+		            	</div>
+		            	<div class="col-12 pt-2 bookinputLocation" id="locationContainer">
+		              		<input id ="location" type="text" class="typeahead" data-provide="typeahead" name="locations">
+		              	</div>
+	              	</div>
+	           	</div>
+           		<div class="col-5"> <!--date pick up and drop__container-->
+	                 <div class="row input-daterange input-group" id="flight-datepicker">
+					    <div class="col-6 form-item">
+					      <label class="text-capitalize text-white pl-2">Pick-Up on
+					      </label>
+					      <input class="input-sm form-control" type="text" id="start-date" name="start" placeholder="Select depart date" data-date-format="DD/MM/YYYY"/>
+					    </div>
+					    <div class="col-6 form-item">
+					      <label class="text-capitalize text-white pl-2">Return on
+					      </label>
+					      <input class="input-sm form-control" type="text" id="end-date" name="end" placeholder="Select return date" data-date-format="DD/MM/YYYY"/>
+					    </div>
+					  </div>
+            	</div>
+            	<div class="col-4"> <!--time and number of people container-->
+               	  	 <div class="row ">
+		                   	<div class="col-6 time">
+		                      	<label class="text-capitalize text-white pl-2">Time
+		                      	</label>
+		                      	<input class="form-control text-white" type="time" value="13:45:00" id="time-input">
+		                   	</div>
+		              	   	<div class="col-6 peoples">
+	                          	<label class="text-capitalize text-white pl-2">No of People
+	                          	</label>
+	                          <select class="form-control text-white" id="formPeople" name="peoples"> 
+		                          	<option value = "">Choose</option>
+		                      		<option value = "0">1</option>
+				                    <option value = "1">2</option>
+				                    <option value = "2">3</option>
+				                    <option value = "3">4</option>
+				                    <option value = "4">5</option>
+				                    <option value = "6">6</option>
+				                    <option value = "5">More Than 6</option>
+	                   		  </select>
+	                        </div>
+	                        <div class="col-9 pt-4"> <!--book now Button container-->
+	        						<input class="bookNow btn-warning " type="submit" value="BOOK NOW" name="book_btn" id="bookNowBtn" data-toggle="modal">
+	        				</div>
+        			 </div>
+        		</div>
+			</div>
+      </div>
+
+      <!--___________________________________________________________________________________________________________________________________-->
+	
+	  <div class="col-12" id="fade-it"> <!--contains PREMIUM WHEELS EXOTIC CAR COLLECTION NO HIDDEN CHARGES/ Fade-it id used for superscrollama-->
+          	<div class="row p-5">
+         		<div class="col-12 col-sm-4 description set1">
+           			<p class="h3 font-weight-normal text-center pb-3 text-dark">PREMIUM WHEELS
+           			</p>
+             		<p class="text-justify">Wherever you are, Premium Wheels is there for you whatever your car rental needs. We are a nationwide network of hire car branches and NZ’s leading hire car specialists, dedicated to keeping you moving for less.You can rely on NZ Rent A Car nationwide, with the option to conveniently pick up or return your rental to any of one of our 17 outlets nationwide.
+             		</p>
+         		</div>
+         		<div class="col-12 col-sm-4 description set2">
+           			<p class="h3 font-weight-normal text-center pb-3 text-dark">EXOTIC CAR COLLECTION
+           			</p>
+             		<p class="text-justify">When only the best will do. Choose from an exceptional collection of premium vehicles and enjoy a seamless service experience. Our prestigious vehicles suit both business and pleasure, and are delivered and collected at your convenience
+             		</p>
+        	 	</div>
+         		<div class="col-12 col-sm-4 description set3 ">
+           			<p class="h3 font-weight-normal text-center pb-3 text-dark">NO HIDDEN CHARGES
+           			</p>
+             		<p class="text-justify">Our prices already include taxes, fuel, and insurance. And all our cancellation/rescheduling charges and penalties are clearly mentioned in the How Billing Works section. We hide nothing and believe that all the surprises you get from Premium Wheels should be pleasant ones!
+             		</p>
+         		</div>
+         	</div>
+       </div>
+
+       <!--_________________________________________________________________________________________________________________________________-->
+
+       <div class="container-fluid slider active text-secondary"> <!--Full slider container/ includes the arrow-->
+	        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+	            <div class="carousel-inner"> <!--full slider- only the slider does not include arrow-->
+		                <div class="carousel-item active"> <!--first slide-->
+			                  <div class="thumbnails"> 
+				                    <div class="row"><!--background-images-->
+					                      <div class="col-xs-12 col-sm-6 col-md-4 first slide_one">
+					                      </div>
+					                      <div class="col-xs-12 col-sm-6 col-md-4 first slide_two">
+					                      </div>
+					                      <div class="col-xs-12 col-sm-6 col-md-4 first slide_three">
+					                      </div>
+				                    </div>
+				                    <div class="row car_description" > <!--descriptions and details about the vehicle-->
+					                      <div class="col-xs-12 col-sm-6 col-md-4 first slide_one describe" >
+						                      	<p class="h2 text-uppercase " >YAMAHA XSR900
+						                      	</p>
+						                      	<P class="h6 text-lowercase ">Liquid-cooled, 3-cylinder<br> 4-stroke, DOHC, 4-valve <br> 847 cc<br>Traction control</P>
+					                      </div>
+					                      <div class="col-xs-12 col-sm-6 col-md-4 first slide_two describe">
+						                     	<p class="h2 text-uppercase">RANGE ROVER 
+						                     	</p>
+						                      	<P class="h6 text-lowercase">2016 MODEL, TORQUE VECTORING<br>Adaptive Dynamics,DYNAMIC RESPONSE<br>HILL DESCENT CONTROL<br>WADE SENSING
+						                      	</P>
+					                      </div>
+					                      <div class="col-xs-12 col-sm-6 col-md-4 first slide_three describe">
+						                      	<p class="h2 text-uppercase">Porsche 911
+						                      	</p>
+						                      	<P class="h6 text-lowercase">2016 MODEL, All wheel drive<br>3.8 sec 0 - 60 mph,450 Horsepower<br>7 Speed manual transmission<br>sports exhaust system<br>Connect Plus including online navigation
+						                      	</P>
+					                      </div>
+				                    </div>
+				                     <div class="row car_move"><!--transparent image with hover effect-->
+					                      <div class="col-xs-12 col-sm-6 col-md-4 first slide_one car">
+					                      </div>
+					                      <div class="col-xs-12 col-sm-6 col-md-4 first slide_two car">  	
+					                      </div>
+					                      <div class="col-xs-12 col-sm-6 col-md-4 first slide_three car">					                      	
+					                      </div>
+				                    </div>
+				             </div>
+		                </div>
+		                <div class="carousel-item"><!--second slide-->
+			                  <div class="thumbnails">
+				                    <div class="row"><!--background-images-->
+					                      <div class="col-xs-12 col-sm-6 col-md-4 second slide_one">
+					                      </div>
+					                      <div class="col-xs-12 col-sm-6 col-md-4 second slide_two">
+					                      </div>
+					                      <div class="col-xs-12 col-sm-6 col-md-4 second slide_three">
+					                      </div>
+				                    </div>
+				                    <div class="row car_description"><!--descriptions and details about the vehicle-->
+					                      <div class="col-xs-12 col-sm-6 col-md-4 second slide_one describe">
+						                      	<p class="h2 text-uppercase">ford mustang
+						                      	</p>
+						                      	<P class="h6 text-lowercase">5.2L V8 that produces 526 hp<br> Rear Wheel Drive,Traction control <br>Connect Plus including online navigation<br>Traction control
+						                      	</P>
+					                      </div>
+					                      <div class="col-xs-12 col-sm-6 col-md-4 second slide_two describe">
+						                     	<p class="h2 text-uppercase">ducati MONSTER 
+						                     	</p>
+						                      	<P class="h6 text-lowercase">2016 MODEL, 1,198cc<br>Cornering ABS, Ducati Traction Control,<br>Ducati Wheelie Control, Riding Modes<br>Ride-by-Wire (RbW) system
+						                      	</P>
+					                      </div>
+					                      <div class="col-xs-12 col-sm-6 col-md-4 second slide_three describe">
+						                      	<p class="h2 text-uppercase">MINI JOHN COOPER
+						                      	</p>
+						                      	<P class="h6 text-lowercase">3-DOOR HATCH<br>Intercooled Turbo Premium<br>1.5L 12V Twin Power Turbo<br>Front Bucket Seats,6-Way Driver Seat<br>AM/FM Stereo,Bluetooth
+						                      	</P>
+					                      </div>
+				                    </div>
+					                <div class="row car_move"><!--transparent image with hover effect-->
+					                      <div class="col-xs-12 col-sm-6 col-md-4 second slide_one car">
+					                      </div>
+					                      <div class="col-xs-12 col-sm-6 col-md-4 second slide_two car">
+					                      </div>
+					                      <div class="col-xs-12 col-sm-6 col-md-4 second slide_three car">
+					                      </div>
+				                    </div>
+			                  </div>
+		                </div>
+	                <div class="carousel-item"><!--third slide-->
+		                  <div class="thumbnails">
+			                    <div class="row"><!--background-images-->
+				                      <div class="col-xs-12 col-sm-6 col-md-4 third slide_one">
+				                      </div>
+				                      <div class="col-xs-12 col-sm-6 col-md-4 third slide_two">
+				                      </div>
+				                      <div class="col-xs-12 col-sm-6 col-md-4 third slide_three">
+				                      </div>
+			                    </div>
+			                    <div class="row car_description"><!--descriptions and details about the vehicle-->
+				                      <div class="col-xs-12 col-sm-6 col-md-4 third slide_one describe">
+					                      	<p class="h2 text-uppercase">Mercedes-AMG 
+					                      	</p>
+					                      	<P class="h6 text-lowercase">AMG 4.0-LITER V8 BITURBO ENGINE<br>AMG SPEEDSHIFT MCT 7-speed sports transmission<br>250 km/h (electronically limited)<br>Traction control
+					                      	</P>
+				                      </div>
+				                      <div class="col-xs-12 col-sm-6 col-md-4 third slide_two describe">
+					                     	<p class="h2 text-uppercase">triumph THRUXTON
+					                     	</p>
+					                      	<P class="h6 text-lowercase">2016 MODEL, 1200cc<br>Multipoint sequential electronic fuel injection<br>96 hp @ 6750 rpm<br>twin silencers
+					                      	</P>
+				                      </div>
+				                      <div class="col-xs-12 col-sm-6 col-md-4 third slide_three describe">
+					                      	<p class="h2 text-uppercase">CIVIC TYPE R GT
+					                      	</p>
+					                      	<P class="h6 text-lowercase">Sports seats<br>Three driving modes<br>Honda CONNECT with Garmin navigation<br>Blind Spot information<br>Parking sensors
+					                      	</P>
+				                      </div>
+			                    </div>
+			                     <div class="row car_move"><!--transparent image with hover effect-->
+				                      <div class="col-xs-12 col-sm-6 col-md-4 third slide_one car">
+				                      </div>
+				                      <div class="col-xs-12 col-sm-6 col-md-4 third slide_two car">
+				                      </div>
+				                      <div class="col-xs-12 col-sm-6 col-md-4 third slide_three car">
+				                      </div>
+			                    </div>
+		                  </div>
+	                </div>
+	            </div>
+
+	            <!-- _________________________arrows on the slider ___________________________________ -->
+
+		            <a class="carousel-control-prev left_arrow lone" href="#carouselExampleControls" role="button" data-slide="prev">
+		                <div class="carousel-control-prev lefticon">
+		                </div>
+		            </a>
+		            <a class="carousel-control-prev left_arrow ltwo" href="#carouselExampleControls" role="button" data-slide="prev">
+		                <div class="carousel-control-prev lefticon">
+		                </div>
+		            </a>
+		            <a class="carousel-control-prev left_arrow lthree" href="#carouselExampleControls" role="button" data-slide="prev">
+		                <div class="carousel-control-prev lefticon">
+		                </div>
+		            </a>
+		            <a class="carousel-control-next right_arrow rone" href="#carouselExampleControls" role="button" data-slide="next">
+		                <div class="carousel-control-next righticon">
+		                </div>
+		            </a>
+		            <a class="carousel-control-next right_arrow rtwo" href="#carouselExampleControls" role="button" data-slide="next">
+		                <div class="carousel-control-next righticon">
+		                </div>
+		            </a>
+		            <a class="carousel-control-next right_arrow rthree" href="#carouselExampleControls" role="button" data-slide="next">
+		                <div class="carousel-control-next righticon">
+		                </div>
+		            </a>
+		    </div>
+      </div>
+<!--________________________________________________________________________________________SLIDER ENDS_________________________________________-->
+
+
+      <p class="h2 font-weight-normal text-center text-uppercase py-4 text-dark description ">Key Features and Benefits
+      </p>
+
+<!-- ____________________________features container__________________________________________________________ -->
+
+
+      <div class="col-10 mx-auto my-3">
+         <div class="row">
+         	<div class="col-12 col-sm-4  description set4">
+  	             <p class="text-left " >
+                      AA Member Deal<br>
+                      24hr AA Roadside Assistance<br>
+                      FREE maps and guides<br>
+                      After hours support<br>
+                      The car you book is the car you drive<br>
+                      And the best service in the country!<br>
+  				 </p>
+  	         </div>
+  	      	 <div class="col-12 col-sm-4  description set5">
+  	             <p class="text-left ">
+                      No Airport Location Fees<br>
+            			No Booking Fees<br>
+            			No Vehicle Registration Recovery Fees<br>
+            			No Booking Service for the Interisland Ferry<br>
+            			No Credit Card Processing Fees<br>
+  				 </p> 
+  	         </div>
+  	         <div class="col-12 col-sm-4 description set5">
+  	             <p class="text-left ">
+                      Free Airport Transfers<br>
+                      Free 24 Hour Mechanical Breakdown Service<br>
+                      Free Unlimited Kilometres<br>
+                      Free Booking Service for the Interisland Ferry<br>
+                      Free Standard Motor Vehicle Insurance (excess applies)<br>
+                      No Extra Driver Fees<br>
+  				 </p> 
+  	         </div>
+         </div>
+      </div>
+<!--__________________________________FOOTER________________________________-->
+
+      <div class="container-fluid footer_main pl-5">
+         <div class="row pl-5 py-5">
+           	<div class="col-12 col-sm-4 pl-3  footer set1">
+    	           <a class = "footer_links" href="#">Auckland Airport</a><br>
+    	           <a class = "footer_links" href="#">Auckland City</a><br>
+    	           <a class = "footer_links"  href="#">Auckland-NorthShore</a><br>
+    	           <a class = "footer_links"  href="#">Christchurch Airport</a><br>
+    	           <a class = "footer_links" href="#">Dunedin Airport</a><br>
+    	    </div>
+    	    <div class="col-12 col-sm-4 pl-3 footer set2">
+    	           <a class = "footer_links"  href="#">Hamilton Downtown</a><br>
+    	           <a class = "footer_links"  href="#">Nelson Airport</a><br>
+    	           <a class = "footer_links" href="#">New Plymouth Airport</a><br>
+                 <a class = "footer_links"  href="#">Queenstown Airport</a><br>
+    	           <a class = "footer_links"  href="#">Wellington Airport</a><br>
+    	     </div>
+    	     <div class="col-12 col-sm-4 pl-3 footer set3">
+    	           <a class = "footer_links" href="#">Safe Driving in NZ</a><br>
+    	           <a class = "footer_links" href="#">About Us</a><br>
+    	           <a class = "footer_links" href="#">Careers</a><br>
+    	           <a class = "footer_links" href="#">Terms and Conditions</a><br>
+    	           <a class = "footer_links" href="#">Contact Us</a><br>
+    	     </div>
+         </div>
+      </div>
+
+<!--______________________________________First modal window___Choose vehicle type_______________________-->
+
+
+	  <div class="modal fade choosemodal" id="exampleModal" tabindex="-1" role="dialog"  aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				 <div class="modal-content text-white bg-dark">
+					<div class="modal-header chooseModalHeader"> <!--modal header_____-->
+					    <h1 class="h3 pt-3 pl-3  main_title">PREMIUM<br> WHEELS
+			       		</h1>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					        <span aria-hidden="true">&times;
+					        </span>
+					    </button>
+			            <div class="col=12 header_lines"> <!--- modal header line animations-->
+			            </div>
+			            <div class="col=12 header_lines second_line"> <!--- modal header line animations-->
+			            </div>
+			        </div>
+					<div class="modal-body py-4"> <!-- modal __ body-->
+					    <div class="col-12">
+					    	<div class="row">
+						    	<p class="col-9">Number of days
+						        </p>
+						        <span class="col-3 day_count">
+						      	</span>
+						    </div>
+					    </div>
+					    <div class="col-12">
+							<div class="row">
+					         	<p class="col-9">Number of people
+					            </p>
+					            <span class="col-3 people_count">
+					            </span>
+					   		</div>
+					    </div>
+						<div class="col-12">
+					      	<p class="h4 text-center py-3 ">Choose your vehicle
+					      	</p>
+					    </div>
+					    <div class="row chooseVehicle Form" id="chooseVehicleForm">
+							<div class="col-6 choose bike">
+					      		<div class="radio col-12 pt-5 mt-3">
+					     	  		<input class="mr-2" type="radio" name="radiobtn" value="0" required>MotorBike
+								</div>
+							</div>
+							<div class="col-6 choose sedan">
+							    <div class="radio col-12 pt-5 mt-3">
+					     	  		<input class="mr-2" type="radio" name="radiobtn" value="1" required>Sedan
+								</div>
+							</div>
+							<div class="col-6 choose suv">
+					      	  	<div class="radio col-12 pt-5 mt-3">
+					     	  		<input class="mr-2" type="radio" name="radiobtn" value="2" required>suv
+								</div>
+							</div>
+							<div class="col-6 choose motorhome">
+								<div class="radio col-12 pt-5 mt-3">
+					     	  		<input class="mr-2" type="radio" name="radiobtn" value="3" required>motorhome
+							    </div>
+							</div>
+					     	<div class="col-12 py-3 ">
+					           	<div class="row">
+					            	<p class="col-7 pt-4 ">Kilometers you plan to travel:
+					            	</p>
+					            	<input type="number" id="enter_kilometer" name = "distance" class="form-control col-5 text-white kilometer_input" placeholder="Enter Kilometers" min="30">
+					            </div>
+					          </div>
+					      	</div>
+					      <div class="modal-footer chooseModalFooter "> 
+					      		<input class="chooseModalBtn btn-warning " type="submit" value="NEXT" name="choose_btn" id="chooseNowBtn" data-toggle="modal">
+					      </div>
+					</div>
+			  	 </div>
+			</div>
+	  </div>
+
+
+<!--__________________________________________________________________Second modal ___details about the car________________-->
+
+	  <div class="modal fade" id="confirmbookModal" tabindex="-1" role="dialog"  aria-hidden="true">
+	  	<div class="modal-dialog" role="document">
+		    <div class="modal-content text-white bg-dark">
+			   <div class="modal-header chooseModalHeader"> <!--modal header_____-->
+					<h1 class="h3 pt-3 pl-3  main_title">PREMIUM<br> WHEELS
+			       	</h1>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					    <span aria-hidden="true">&times;
+					    </span>
+					</button>
+			        <div class="col=12 header_lines"> <!--- modal header line animations-->
+			        </div>
+			        <div class="col=12 header_lines second_line"> <!--- modal header line animations-->
+			        </div>
+			    </div>
+		     	<div class="modal-body"><!-- modal __ body-->
+		      		<div class="col-12 p-0">
+			      		<div class="col-12 selected rover">
+			      			<div class="col-6 selected_description_container" >
+				      			<p class="h3 text-uppercase text-dark">RANGE ROVER EVOQUE</p>
+				      			<p class="text-capitalize text-dark">INCONTROL TOUCH WITH 8" TOUCHSCREEN<br>
+				      				HALOGEN HEADLIGHTS<br>
+				      				CRUISE CONTROL<br>
+				      				Max speed : 182kph<br>
+				      				ENGINE:1,999CC<br>
+			      			</div>
+			      		</div>
+				      	<div class="col-12 selected mercedees">
+				      		<div class="col-6 selected_description_container">
+				      			<p class="h3 text-uppercase text-dark">Mercedes-AMG</p>
+				      			<p class="text-capitalize text-dark">AMG 4.0-LITER V8 BITURBO ENGINE<br>
+				      				AMG SPEEDSHIFT MCT 7-speed sports transmission<br>
+				      				250 km/h (electronically limited)<br>
+				      				Traction control</p>
+				      		</div>
+				      	</div>
+				      	<div class="col-12 selected yamaha">
+				      		<div class="col-6 selected_description_container" >
+				      			<p class="h3 text-uppercase text-dark">YAMAHA XSR900</p>
+				      			<p class="text-capitalize text-dark">Liquid-cooled, 3-cylinder<br>
+				      			 4-stroke, DOHC, 4-valve <br> 
+				      			 847 cc<br>
+				      			Traction control</p>
+				      		</div>
+				      	</div>
+				      	<div class="col-12 selected caravan">
+				      		<div class="col-6 selected_description_container" >
+				      			<p class="h3 text-uppercase text-dark">2017 BENIMAR MILEO 331</p>
+				      			<p class="text-capitalize text-dark"> Euro 6 150hp Euro V engine <br>
+				      			 24in RSE Wireless TV<br> 
+				      			 Samy Vision Auto Satelite<br>
+				      			Cam for Sky card Upgrade<br>
+				      			Awning with 2-berth</p>
+				      		</div>
+				      	</div>
+		      		</div>
+		      		<div class="col-12 p-0">
+						<div class="radio col-12 py-3 ">
+						   <input class="mr-2" type="radio" name="insurancebtn" value="5"  id="insurance_activate">Insurance
+						</div>
+				        <div class="col-12">
+				          	<div class="row">
+					           <p class="col-9 pl-1">Number of days
+					           </p>
+					           <span class="col-3 day_count">
+					           </span>
+					        </div>
+				        </div>
+				        <div class="col-12">
+				           	<div class="row">
+				            	<p class="col-9 pl-1">Vehicle Rent
+				            	</p>
+				            	<span class="col-3 vehicle_rent">
+				            	</span>
+				            </div>
+				        </div>
+				            <div class="col-12">
+				          		<div class="row">
+					            	<p class="col-9 pl-1">Kilometers planned to travel
+					            	</p>
+					            	<span class="col-3 distance_planned">
+					            	</span>
+					         	</div>
+				           </div>
+				           <div class="col-12">
+				           		<div class="row">
+				            		<p class="col-9 pl-1">Fuel Cost
+				            		</p>
+				            		<span class="col-3 fuel_cost">
+				            	    </span>
+				            	</div>
+				           </div>
+				           <div class="col-12">
+				           		<div class="row">
+				            		<p class="col-9 pl-1">Total Cost
+				            		</p>
+				            		<span class="col-3 total_cost">
+				            	    </span>
+				            	</div>
+				          	</div>
+				      		<button class="chooseModalBtn btn-warning" data-toggle="modal" data-target="#confirmbookModal" data-whatever="@getbootstrap">NEXT
+				      		</button>
+		    			</div>
+		    		</div>
+		  	</div>
+		</div>
+	  </div>
+
+
+	    
+<!-- javascript_section-->
+
+    <script src="js/TweenMax.min.js"></script> <!---superscrollama-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="  sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js'></script>
+    <script src="js/date.js"></script> 
+    <script src="js/typeahead.bundle.js"></script>
+    <script src="js/typeahead.js"></script> <!--- have added locations on this file -->
+    <script src="js/datepicker.js"></script> <!--date picker and all the calculations have been done on this file/ total cost/ fuel/cost/number of days-->
+    <script src="js/jquery.superscrollorama.js"></script> <!---superscrollama-->
+    <script src="js/main_javascript.js"></script><!--validation of location/ validation modal windows and adjustments of superscrollama -->
+  </body>
+</html>
